@@ -37,7 +37,7 @@ set_time_format -unit ns -decimal_places 3
 #**************************************************************
 
 set vclk_input [get_ports {VCLK}]
-set n64_vclk_per 20.000
+set n64_vclk_per 20.408
 set n64_vclk_waveform [list 0.000 [expr $n64_vclk_per*3/5]]
 set sys_clk_per 20.000
 set sys_clk_waveform [list 0.000 [expr $sys_clk_per/2]] 
