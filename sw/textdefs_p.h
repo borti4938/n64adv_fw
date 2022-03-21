@@ -150,7 +150,7 @@
 
 
 static const char *copyright_note =
-    "2021 borti4938"; /* 14 chars */
+    "2022 borti4938"; /* 14 chars */
 
 const char *btn_overlay_0 =
     "A ... Enter\n"
@@ -286,7 +286,7 @@ static const char *about_overlay =
 static const char *license_overlay =
     " The N64Advanced is part of the\n"
     " N64 RGB/YPbPr DAC project\n"
-    "        Copyright   2015 - 2021 Peter Bartmann\n"
+    "        Copyright   2015 - 2022 Peter Bartmann\n"
     " This project is published under GNU GPL v3.0 or\n"
     " later. You should have received a copy of the GNU\n"
     " General Public License along with this project.\n"
