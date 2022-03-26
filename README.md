@@ -99,11 +99,11 @@ The tables also show some default vaules.
 |:------|:--------|:------------|
 | **NTSC/PAL awareness** | Global | Decide whether you want to configure linemultiplier options for both NTSC and PAL games or whether you want to apply different settings \[3\] |
 | **Linemultiplier** | | Change between NTSC and PAL submenus (does not applied if NTSC/PAL awareness is off) |
-| **Linemultiplier - 240p/288p settings ** | _submenu_ | Enters linemultiplier submenu for progressive video input |
-| **Linemultiplier - 240p/288p settings ** | _submenu_ | Enters linemultiplier submenu for interlaced video input |
-| **V/H position/timing ** | _submenu_ | Enters positioning and timing submenu |
+| **Linemultiplier - 240p/288p settings** | _submenu_ | Enters linemultiplier submenu for progressive video input |
+| **Linemultiplier - 240p/288p settings** | _submenu_ | Enters linemultiplier submenu for interlaced video input |
+| **V/H position/timing** | _submenu_ | Enters positioning and timing submenu |
 | **Gamma Value** | 1.00 | Applies some gamma boost.<br>Gamma curve on output is defined as I = I_{in}^**\gamma**, where I is the intensity. |
-| **VI config page 2 ** | _submenu_ |  Enters VI configuration page #2 |
+| **VI config page 2** | _submenu_ |  Enters VI configuration page #2 |
 
 \[3\] If you opt for global settings, the NTSC setup is applied and showed in menu  
 
@@ -111,15 +111,15 @@ The tables also show some default vaules.
 
 | Entry | Default | Description |
 |:------|:--------|:------------|
-| **Color Space | _Default by J2_ | Selects between RGBS (RGB + separate Sync), RGBS/RGsB (RGB with sync on green) and YPbPr (Component video)<br>(Separate sync stays enabled for all modes) |
+| **Color Space** | _Default by J2_ | Selects between RGBS (RGB + separate Sync), RGBS/RGsB (RGB with sync on green) and YPbPr (Component video)<br>(Separate sync stays enabled for all modes) |
 | **Exchange R&B out** | Off | Changes outputs of R and B (Pr and Pb)\[4\] |
-| **LowRes.-DeBlur ** |  | Enables low resolution deblur \[5\] |
-| ** - power cycle default ** | Off | VI-DeBlur default setting after a power cycle |
-| **16bit mode ** |  | Enables 16bit mode \[6\] |
-| ** - power cycle default ** | Off | VI-DeBlur default setting after a power cycle |
-| **V/H position/timing ** | _submenu_ | Enters positioning and timing submenu |
+| **LowRes.-DeBlur** |  | Enables low resolution deblur \[5\] |
+| **- power cycle default** | Off | VI-DeBlur default setting after a power cycle |
+| **16bit mode** |  | Enables 16bit mode \[6\] |
+| **- power cycle default** | Off | VI-DeBlur default setting after a power cycle |
+| **V/H position/timing** | _submenu_ | Enters positioning and timing submenu |
 | **Gamma Value** | 1.00 | Applies some gamma boost.<br>Gamma curve on output is defined as I = I_{in}^**\gamma**, where I is the intensity. |
-| **VI config page 1 ** | _submenu_ |  Enters VI configuration page #1 |
+| **VI config page 1** | _submenu_ |  Enters VI configuration page #1 |
 
 \[4\] Option was introduced just for a few experimental flex cables where I exchanged red and blue  
 \[5.1\] _LowRes.-DeBlur_ does not apply for interlaced content  
@@ -133,10 +133,10 @@ The tables also show some default vaules.
 | **Enable Linemultiplier** | _Default by J4.1_ | Set the linemultiplier between **LineX Off**, **LineX2** and **LineX3** \[7\] |
 | **Video PLL state** | | Shows you the state of the FPGA internal PLL \[8\] |
 | **Use Scanlines** | _Default by J3_ | Choose if you want scanlines emulation be enabled for progressive content \[9\] |
-| ** - Method** | _Advanced_ | Switch between **Simple** and **Advanced**.<br> - Simple: Reference is just a single line.<br>- Advanced: Reference calculated by mean of previous and next pixel line. |
-| ** - Scanline ID** | Even | Choose between **Even** (scanline before actual drawn line) and **Odd** (scanline after drawn line) |
-| ** - Scanline Strength** \[10\] | _Default by J3_ | Selects the scanline strength with I = **s** x I_{in}, with **s** being the actual setting and I the pixel intensity. |
-| ** - Hybrid Depth** \[10\] | 0% | Makes scanline strength pixel-intensity dependent<br>- 0% means that the scanlines are drawn as calculated<br>- 100% means that the scanlines strength is reduced down to 0 for maximum pixel intensity<br>- above or below 100% means that the scanlines strength is reduced to 0 before maximum pixel intensity or never completely reduced to 0, respectively |
+| **- Method** | _Advanced_ | Switch between **Simple** and **Advanced**.<br> - Simple: Reference is just a single line.<br>- Advanced: Reference calculated by mean of previous and next pixel line. |
+| **- Scanline ID** | Even | Choose between **Even** (scanline before actual drawn line) and **Odd** (scanline after drawn line) |
+| **- Scanline Strength** \[10\] | _Default by J3_ | Selects the scanline strength with I = **s** x I_{in}, with **s** being the actual setting and I the pixel intensity. |
+| **- Hybrid Depth** \[10\] | 0% | Makes scanline strength pixel-intensity dependent<br>- 0% means that the scanlines are drawn as calculated<br>- 100% means that the scanlines strength is reduced down to 0 for maximum pixel intensity<br>- above or below 100% means that the scanlines strength is reduced to 0 before maximum pixel intensity or never completely reduced to 0, respectively |
 
 \[7.1\] At _LineX Off_ following setting won't be enabled.  
 \[7.2\] _LineX3_ is only available for NTSC inputs. PAL automatically falls back to _LineX2_.  
@@ -152,12 +152,12 @@ Note that you can quickly skip to 480i/576i Configuration by pressing **L** or *
 | Entry | Default | Description |
 |:------|:--------|:------------|
 | **De-Interlacing (Bob)** | _Default by J4.2_ | Enables or disables the bob deinterlacer \[11\] |
-| ** - Field-Shift Fix** | Off | Shifts all fileds half of a pixel up and down between linedoubled even and odd field reducing some typicall up-down-flickering of simple bob deinterlacing in most cases |
+| **- Field-Shift Fix** | Off | Shifts all fileds half of a pixel up and down between linedoubled even and odd field reducing some typicall up-down-flickering of simple bob deinterlacing in most cases |
 | **Use Scanlines** | _Default by J3_ | Choose if you want scanlines emulation be enabled for interlaced content \[12\] |
-| ** - Method** | _Link 240p_ | Switch between individual settings for interlaced content (**480i ind.**) or same settings as for progressive (**Link 240p.**) |
-| ** - Scanline ID** | Even | Choose between **Even** (scanline before actual drawn line) and **Odd** (scanline after drawn line) |
-| ** - Scanline Strength** \[13\] | _Default by J3_ | Selects the scanline strength with I = **s** x I_{in}, with **s** being the actual setting and I the pixel intensity. |
-| ** - Hybrid Depth** \[13\] | 0% | Makes scanline strength pixel-intensity dependent<br>- 0% means that the scanlines are drawn as calculated<br>- 100% means that the scanlines strength is reduced down to 0 for maximum pixel intensity<br>- above or below 100% means that the scanlines strength is reduced to 0 before maximum pixel intensity or never completely reduced to 0, respectively |
+| **- Method** | _Link 240p_ | Switch between individual settings for interlaced content (**480i ind.**) or same settings as for progressive (**Link 240p.**) |
+| **- Scanline ID** | Even | Choose between **Even** (scanline before actual drawn line) and **Odd** (scanline after drawn line) |
+| **- Scanline Strength** \[13\] | _Default by J3_ | Selects the scanline strength with I = **s** x I_{in}, with **s** being the actual setting and I the pixel intensity. |
+| **- Hybrid Depth** \[13\] | 0% | Makes scanline strength pixel-intensity dependent<br>- 0% means that the scanlines are drawn as calculated<br>- 100% means that the scanlines strength is reduced down to 0 for maximum pixel intensity<br>- above or below 100% means that the scanlines strength is reduced to 0 before maximum pixel intensity or never completely reduced to 0, respectively |
 
 \[11\] At _Off_ following setting won't be enabled.  
 \[12\] At _Off_ following setting won't be enabled.  
@@ -188,7 +188,7 @@ Note that you can quickly skip to 1240p/288p Configuration by pressing **L** or 
 | **In-Game Routines - VI-DeBlur** | Off | Allows switching _low. res. deblur (see description above) **on** and **off** via controller_<br>- Button combination **On**: **Start + Z + R + C-ri**<br>- Button combination **Off**: **Start + Z + R + C-le** |
 | **In-Game Routines - 16bit Mode** | Off | Allows switching _low. res. deblur (see description above) **on** and **off** via controller_<br>- Button combination **On**: **Start + Z + R + C-down**<br>- Button combination **Off**: **Start + Z + R + C-up** |
 | **Filter AddOn - Filter Cut-Off** | Auto |  Select the filter cut-off for the filter add-on board \[17\] |
-| **Show Test-Pattern ** | | Show an experimental test pattern (checkered board atm)<br>resolution depends on actual input |
+| **Show Test-Pattern** | | Show an experimental test pattern (checkered board atm)<br>resolution depends on actual input |
 | **Unlock lucky 1440p** \[12\] | _Off_ | Unlocks 1440p resolution in the _resolution_ configuration screen |
 
 \[17\] Jumper J1.1 has to be closed to have access to next option  
