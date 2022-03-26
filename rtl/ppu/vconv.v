@@ -2,7 +2,7 @@
 //
 // This file is part of the N64 RGB/YPbPr DAC project.
 //
-// Copyright (C) 2015-2021 by Peter Bartmann <borti4938@gmail.com>
+// Copyright (C) 2015-2022 by Peter Bartmann <borti4938@gmail.com>
 //
 // N64 RGB/YPbPr DAC is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -28,11 +28,6 @@
 // Tool versions:  Altera Quartus Prime
 // Description:
 //
-// Dependencies: vh/n64a_params.vh
-//
-// Features: conversion RGB to YPbPr on demand
-//           outputs 8bit vectors for ADV7125 / ADV7123
-//
 //////////////////////////////////////////////////////////////////////////////////
 
 module vconv(
@@ -47,7 +42,7 @@ module vconv(
   vdata_o
 );
 
-`include "../../vh/n64adv_vparams.vh"
+`include "../../lib/n64adv_vparams.vh"
 
 localparam coeff_width = 20;
 

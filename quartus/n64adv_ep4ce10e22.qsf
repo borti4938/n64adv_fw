@@ -178,17 +178,20 @@ set_instance_assignment -name IO_STANDARD "2.5 V" -to nEN_YPbPr
 set_global_assignment -name TOP_LEVEL_ENTITY n64adv_top
 
 #vh
-set_global_assignment -name VERILOG_INCLUDE_FILE ../vh/n64adv_vparams.vh
-set_global_assignment -name VERILOG_INCLUDE_FILE ../vh/n64adv_cparams.vh
-set_global_assignment -name VERILOG_INCLUDE_FILE ../vh/n64adv_ppuconfig.vh
+set_global_assignment -name VERILOG_INCLUDE_FILE ../lib/n64adv_vparams.vh
+set_global_assignment -name VERILOG_INCLUDE_FILE ../lib/n64adv_cparams.vh
+set_global_assignment -name VERILOG_INCLUDE_FILE ../lib/n64adv_ppuconfig.vh
 
 #ip
 set_global_assignment -name QIP_FILE ../ip/sys_pll.qip
 set_global_assignment -name QIP_FILE ../ip/video_pll.qip
+
+#qsys-ip
 #set_global_assignment -name QIP_FILE ../ip/altclkctrl/synthesis/altclkctrl.qip
+#set_global_assignment -name QIP_FILE ../nios/system_n64adv1/synthesis/system_n64adv1.qip
+
 set_global_assignment -name QSYS_FILE ../ip/altclkctrl.qsys
-set_global_assignment -name QIP_FILE ../nios/system_n64adv1/synthesis/system_n64adv1.qip
-#set_global_assignment -name QSYS_FILE ../nios/system_n64adv1.qsys
+set_global_assignment -name QSYS_FILE ../nios/system_n64adv1.qsys
 
 #rtl
 set_global_assignment -name VERILOG_FILE ../rtl/n64adv_top.v

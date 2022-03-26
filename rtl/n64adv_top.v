@@ -2,7 +2,7 @@
 //
 // This file is part of the N64 RGB/YPbPr DAC project.
 //
-// Copyright (C) 2015-2021 by Peter Bartmann <borti4938@gmail.com>
+// Copyright (C) 2015-2022 by Peter Bartmann <borti4938@gmail.com>
 //
 // N64 RGB/YPbPr DAC is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -27,9 +27,6 @@
 // Target Devices: Cyclone IV:    EP4CE10E22
 //                 Cyclone 10 LP: 10CL010YE144
 // Tool versions:  Altera Quartus Prime
-//
-// Revision: 1.33
-// Features: see repository readme
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -73,7 +70,7 @@ module n64adv_top (
 parameter [3:0] hdl_fw_main = 4'd1;
 parameter [7:0] hdl_fw_sub  = 8'd67;
 
-`include "../vh/n64adv_vparams.vh"
+`include "../lib/n64adv_vparams.vh"
 
 input                     VCLK;
 input                     nVDSYNC;

@@ -2,7 +2,7 @@
 //
 // This file is part of the N64 RGB/YPbPr DAC project.
 //
-// Copyright (C) 2015-2021 by Peter Bartmann <borti4938@gmail.com>
+// Copyright (C) 2015-2022 by Peter Bartmann <borti4938@gmail.com>
 //
 // N64 RGB/YPbPr DAC is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -27,7 +27,6 @@
 // Target Devices: universial (PLL and 50MHz clock required)
 // Tool versions:  Altera Quartus Prime
 // Description:
-// Latest change: ip independet implementation of RAM
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -55,8 +54,8 @@ module n64adv_controller (
 
 parameter [11:0] hdl_fw = 12'h000; // number is a dummy; defined in and passed from top module
 
-`include "../vh/n64adv_cparams.vh"
-`include "../vh/n64adv_ppuconfig.vh"
+`include "../lib/n64adv_cparams.vh"
+`include "../lib/n64adv_ppuconfig.vh"
 
 input [2:0] CLKs;
 inout nRST;
