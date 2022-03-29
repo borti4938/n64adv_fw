@@ -299,13 +299,13 @@ static const char *license_overlay =
 static const char *welcome_header =
     "Welcome";
 static const char *welcome_overlay =
-    " Changes coming with latest firmware update:\n\n"
+    " Changes coming with latest firmware update:\n"
     " * Center OSD window for PAL and NTSC\n"
     " * Improved hand-over of controller data\n"
     "   between hard- and software\n"
     " * Improved clock domain transfers\n"
     " * Input register for video data and data sync\n"
-    " * Automatic Video PLL control (locked / unlocked)\n"
+    " * Automatic Video PLL control (locked / unlocked)\n\n"
     " Save config once to not show this screen again.\n"
     " Press B to enter main screen! Have fun! Peter :)";
   /* 1234567890123456789012345678901234567890123456789012 */

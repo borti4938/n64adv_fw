@@ -321,9 +321,7 @@ In order to pre-build the QSYS-IPs
   - click on _Generate HDL..._, on _Generate_ and _Close_ in the pop-up windows  
   - and then on _Finish_ after the last IP
 
-The core "altclkctrl.qsys" just need to be generated the first time you want to build the project.
-You are allowed to switch between revisions without re-generating this core again.
-In contrast, the NIOS II system design needs to be re-generated if the revision changes (i.e. not only the first time).
+The core "altclkctrl.qsys" and the NIOS II system design needs to be re-generated if the revision changes (i.e. not only the first time).
 Of course, a change in any IP design needs you to re-generate the core, too.
 
 To now use the pre-builds, you must open ./quartus/n64adv\_10cl010ye144.qsf and/or ./quartus/n64adv\_ep4ce10e22.qsf, respectively.
